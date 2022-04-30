@@ -4,7 +4,7 @@ const addr = "18888";
 console.log(`HTTP server listening on http://localhost${addr}`);
 
 function handler(req: Request): Response {
-  const pathname = new URL(req.url)
+  const pathname = new URL(req.url);
   return new Response(`Hello world from ${pathname}`);
 }
 
